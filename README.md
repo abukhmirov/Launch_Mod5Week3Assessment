@@ -25,10 +25,11 @@ Check out a new branch and complete the following tasks **in order**:
 Answer the questions below in this README.  Answer these questions as if you are in an interview!
 
 1. What are roles and claims as they relate to Authentication and Authorization?
-
+Roles and Claims are used for permissing different functionalities of the app. Roles allowing to have a grouping of permissions to be assigned to a user. The user might need to Authenticate themselves to gain access to a role. Claims are more granular permission that can be given to a user. An example of the difference between a role and a claim is if you have a user with the Librarian role and they can Read() and Write() with the role's permission. You could also leave them as a regular, non-librarian user, but add claims to them which separately allow  the user to read and write.
 2. How do cookies play a role in authentication and authorization?
-
+Cookies allow for regular updates on the user like how many times the user does an action or logs in. This would be too regular of a change for Roles or Claims. The cookies can then be used to change permissions based on whatever they are updating.
 3. If asked to implement Auth in a new .NET application, would you use the Identity framework?
+Yes, it provides a premade set of tools that automatically get set in your app. This gives me more time to work on the project and the razor pages can be updated to fit my styling choices. It seems counter productive to not use Identity.
 
 ## Rubric
 
